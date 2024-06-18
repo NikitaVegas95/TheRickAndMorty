@@ -14,7 +14,7 @@ const fetchAllCharacter = async () => {
 
 const displayCharacters = (characters) => {
     characterCard.innerHTML = ''
-    characters.map((character) => {
+    characters.forEach((character) => {
         characterCard.innerHTML +=
             `<div class="character__card">
                 <p class="character__title">${character.name}</p>
@@ -51,7 +51,7 @@ const getFilteredCharacters = async () => {
 
 getFilteredCharacters()
     .catch(error => {
-        error('Ошибка запроса')
+        console.error('Ошибка запроса: ', error)
     })
 
 
