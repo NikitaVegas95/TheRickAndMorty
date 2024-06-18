@@ -1,1 +1,1 @@
-[deploy]((https://the-rick-and-morty-henna.vercel.app/)) 
+[deploy](https://the-rick-and-morty-henna.vercel.app/)
